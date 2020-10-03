@@ -1,0 +1,28 @@
+<style>
+table { 
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+}
+</style>
+
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% usuarios.map(usuario => { %>
+            <tr>
+                <td><%= usuario.id %></td>
+                <td><%= usuario.nome %></td>
+                <td><%= usuario.email %></td>
+            </tr>
+        <% }); %>
+    </tbody>
+</table>
